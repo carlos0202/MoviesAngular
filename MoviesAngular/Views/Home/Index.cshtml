@@ -33,15 +33,22 @@
             </text>
         </div>
     </div>*@
-
-<div ng-app="MoviesAngular">
-    <div ng-controller="ListController">
-        {{message}}
+<hgroup>
+    <h2>&nbsp;</h2>
+</hgroup>
+<div class="row">
+    <div class="col-md-12">
+        <div ng-app="MoviesAngular">
+            <ng-view></ng-view>
+        </div>
     </div>
 </div>
 
 @section scripts {
     <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
     <script src="~/Scripts/Client/GlobalSPA.js"></script>
     <script src="~/Scripts/Client/ListController.js"></script>
+    <script src="~/Scripts/Client/DetailsController.js"></script>
+    <script src="~/Scripts/Client/MovieService.js"></script>
 }

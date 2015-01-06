@@ -1,0 +1,29 @@
+﻿<div ng-controller="ListController">
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="text-primary">
+                    <td>Title</td>
+                    <td>Release Year</td>
+                    <td>Runtime</td>
+                    <td>Options</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="movie in movies">
+                    <td>{{movie.Title}}</td>
+                    <td>{{movie.ReleaseYear}}</td>
+                    <td>{{movie.Runtime}}</td>
+                    <td>
+                        <a class="btn btn-default" href="#/details/{{movie.Id}}">
+                            Details
+                        </a>
+                        <button class="btn btn-default" ng-click="delete(movie)">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
