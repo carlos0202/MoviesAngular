@@ -226,6 +226,7 @@
       <DependentUpon>MovieDB.mdf</DependentUpon>
     </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Client\Views\Edit.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -261,6 +262,7 @@
     <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Client\DetailsController.js" />
+    <Content Include="Scripts\Client\EditController.js" />
     <Content Include="Scripts\Client\GlobalSPA.js" />
     <Content Include="Scripts\Client\ListController.js" />
     <Content Include="Scripts\Client\MovieService.js" />
