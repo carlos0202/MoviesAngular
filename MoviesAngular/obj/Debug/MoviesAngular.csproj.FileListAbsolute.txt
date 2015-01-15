@@ -63,3 +63,5 @@ C:\Users\Cagonzalec\Documents\Visual Studio 2013\Projects\MoviesAngular\MoviesAn
 C:\Users\Cagonzalec\Documents\Visual Studio 2013\Projects\MoviesAngular\MoviesAngular\obj\Debug\MoviesAngular.pdb
 C:\Users\Cagonzalec\Documents\Visual Studio 2013\Projects\MoviesAngular\MoviesAngular\obj\Debug\MoviesAngular.Migrations.InitialCreate.resources
 C:\Users\Cagonzalec\Documents\Visual Studio 2013\Projects\MoviesAngular\MoviesAngular\obj\Debug\MoviesAngular.csproj.GenerateResource.Cache
+C:\Users\Cagonzalec\Documents\Visual Studio 2013\Projects\MoviesAngular\MoviesAngular\bin\CommonTasks.HelperLib.dll
+C:\Users\Cagonzalec\Documents\Visual Studio 2013\Projects\MoviesAngular\MoviesAngular\bin\CommonTasks.HelperLib.pdb

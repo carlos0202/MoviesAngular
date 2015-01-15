@@ -1,0 +1,47 @@
+﻿@using System.Reflection
+@using System.Dynamic
+
+@model IEnumerable<ExpandoObject>
+
+@{
+    ViewBag.Title = "Anonymous";
+    ICollection<KeyValuePair<string, object>> first = Model.FirstOrDefault();
+}
+
+<div class="container">
+    <div class="col-md-12">
+        <hgroup><h2>Datos de tabla</h2></hgroup>
+
+        <div class="well">
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                @foreach (var item in first)
+                                {
+                                    <th>@item.Key</th>
+                                }
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    @foreach (var field in item)
+                                    {
+                                        <td>@field.Value</td>
+                                    }
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
