@@ -28,7 +28,8 @@ namespace MoviesAngular.Controllers
             dao.OpenConnection();
             var reader = dao.ExecuteReader("Select * From Movies", null);
             string excludedFields = "ID,Runtime";
-            var result = reader.ToExpandoArray(null, excludedFields);
+            string includedFields = "Title";
+            var result = reader.ToExpandoArray(includedFields, excludedFields);
             dao.CloseConnection();
 
             return View(result);
