@@ -1,0 +1,10 @@
+﻿<section class="gallery" ng-show="product.images.length > 0">
+    <div class="img-wrap">
+        <img ng-src="{{product.images[gallery.current].full}}" class="img img-circle center-block" />
+    </div>
+    <ul class="img-thumbnails clearfix">
+        <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+            <img ng-src="{{image.thumb}}" style="height:50px; cursor: pointer" ng-click="gallery.setCurrent(product.images.indexOf(image))" />
+        </li>
+    </ul>
+</section>
